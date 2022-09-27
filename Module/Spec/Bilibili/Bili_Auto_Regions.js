@@ -81,7 +81,7 @@ async function SwitchRegion(play) {
 	const TW = $.read('BiliArea_TW') || '🇨🇳 台湾节点'; //Your Taiwan sub-policy name.
 	const HK = $.read('BiliArea_HK') || '🇭🇰 香港节点'; //Your HongKong sub-policy name.
 	const DF = $.read('BiliArea_DF') || '🌐 全球直连'; //Sub-policy name used after region is blocked(e.g. url 404)
-	const off = $.read('BiliArea_disabled') || ''; //WiFi blacklist(disable region change), separated by commas.
+	const off = $.read('BiliArea_disabled') || '🌐 全球直连'; //WiFi blacklist(disable region change), separated by commas.
 	const current = await $.getPolicy(Group);
 	const area = (() => {
 		let select;
